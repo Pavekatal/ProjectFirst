@@ -1,0 +1,162 @@
+@media (max-width: 1024px) {
+
+    @import 'vars';
+    
+    .center {
+        padding-left: calc(50% - 393px);
+        padding-right: calc(50% - 393px);
+    }
+
+    // Главная страница
+
+    .category {
+
+        &__box {
+            gap: 30px;
+        }
+
+        &__product {
+            height: 265px;
+        }
+    
+        &__product-big {
+            height: 268px;
+        }
+    }
+
+    .content {
+
+        &__box {
+            row-gap: 46px;
+            column-gap: 30px;
+        }
+    }
+
+    .catalog {
+
+        margin-top: 69px;
+
+        &__box {
+            column-gap: 29px;
+            row-gap: 46px;
+            margin-top: 32px;
+            padding-bottom: 41px;
+        }
+    }
+
+    .footer {
+
+        justify-content: flex-start;
+        padding-top: 30px;
+
+        &__logo {
+            display: none;
+        }
+
+        &__box-menu {
+            margin-right: 133px;
+        }
+
+        &__box-contacts {
+            margin-right: 185px;
+        }
+    }
+
+// Страница Каталог
+
+    .toolsbar {
+        padding-bottom: 36px;
+    }
+
+    .catalog-page {
+        &__case {
+            column-gap: 30px;
+            row-gap: 43px;
+            padding-bottom: 46px;
+        }
+    }
+
+    .filtr-form {
+        right: -237px;
+    }
+
+    // Страница Корзина
+
+    .basket {
+        margin-top: 66px;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 64px;
+
+        &__content {
+            grid-row: 1/2;
+        }
+
+        &__name {
+            padding-bottom: 12px;
+        }
+
+        &__item {
+            padding-bottom: 30px;
+        }
+    
+        &__form {
+            grid-row: 2/3;
+            max-height: 556px;
+        }
+
+        &__form-head {
+            padding-top: 46px;
+            padding-bottom: 38px;
+        }
+
+        &__content-btn-box {
+            margin-top: 0;
+        }
+
+        &__device-btn {
+            background: $bgc-btn;
+            color: $color-text;
+            font-family: inherit;
+        }
+
+        &__data-box {
+            margin-right: 61px;
+        }
+    }
+
+    .content-device {
+        padding-top: 84px;
+    }
+
+    .content__box-basket {
+        padding-bottom: 37px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 833px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    // Главная страница
+
+    .content {
+
+        &__product {
+            width: 345px;
+        }
+    }
+
+    //  Страница Каталог
+
+    .catalog-page {
+
+        &__case {
+            justify-content: space-around;
+        }
+    }
+   
+}

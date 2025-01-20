@@ -1,0 +1,348 @@
+@media (max-width: 767px) {
+
+    @import 'vars';
+    
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+// Главная страница
+
+    .header {
+        padding-top: 44px;
+        border: none;
+
+        &__input {
+            display: none;
+        }
+
+        &__logo {
+            width: 99px;
+        }
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-mobil {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        &__btn {
+            background: transparent;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+        }
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__heading {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 59px;
+            text-align: center;
+            padding-top: 42px;
+        }
+
+        &__down {
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+
+    .link {
+        font-size: 14px;
+        
+    }
+
+    .category {
+        padding-top: 32px;
+
+        &__heading {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        &__box {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        &__product {
+            grid-column: 1 / -1;
+            height: 375px;
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        &__product-big {
+            height: 243px;
+        }
+    }
+
+    .content {
+        padding-top: 33px;
+
+        &__heading {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        &__box {
+            gap: 0;
+        }
+
+        &__product-name {
+            font-size: 18px;
+            line-height: 22px;
+            padding-top: 9px;
+        }
+
+        &__text {
+            padding-bottom: 8px;
+        }
+
+        &__price {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__old-price {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    .mobil-product-first {
+        padding-bottom: 32px;
+    }
+
+    .mobil-product {
+        padding-bottom: 36px;
+    }
+
+    .catalog {
+        margin-top: 36px;
+
+        &__box {
+            padding-bottom: 36px;
+        }
+    }
+
+    .footer {
+        margin-top: 32px;
+        padding-top: 33px;
+        padding-bottom: 33px;
+        justify-content: flex-start;
+
+        &__box-menu {
+            margin-right: 102px;
+        }
+
+        &__box-contacts {
+            margin-right: 0px;
+        }
+
+        &__box-subscription {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 67px;
+        }
+    }
+
+    // Страница Каталог
+
+    .top-catalog {
+        margin-bottom: 32px;
+    }
+
+    .title {
+
+        &__heading_catalog {
+            padding-top: 94px;
+            text-align: center;
+        }
+    }
+
+    .toolsbar {
+        padding-bottom: 32px;
+        flex-direction: column;
+        align-items: start;
+        gap: 14px;
+
+        &__view {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__filtred {
+            order: 2;
+            justify-content: flex-start;
+        }
+
+        &__sortered {
+            order: 1;
+        }
+
+        &__nav-link {
+            font-size: 14px;
+        }
+
+        &__sort {
+            height: 41px;
+            width: 203px;
+            padding-left: 19px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+        }
+    }
+
+    .button-filtr {
+        height: 41px;
+        width: 164px;
+        padding-left: 19px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+    }
+
+    .catalog-page {
+
+        &__case {
+            gap: 32px;
+            padding-bottom: 32px;
+        }
+    }
+
+    .catalog-link {
+        font-size: 16px;
+    }
+
+    .filtr-form {
+        max-width: 286px;
+        left: 0;
+        max-height: 910px;
+        flex-wrap: wrap;
+
+        &__wrapper {
+            max-height: 910px;
+        }
+    }
+
+    // Страница Корзина
+
+    .top-basket__title {
+        margin-top: 95px;
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+    }
+
+    .basket {
+        margin-top: 66px;
+        padding-top: 26px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+
+        &__name {
+            display: none;
+        }
+
+        &__img {
+            display: none;
+        }
+
+        &__item {
+            padding-top: 18px;
+            padding-bottom: 32px;
+        }
+
+        &__item-first {
+            padding-top: 18px;
+            padding-bottom: 24px;
+        }
+
+        &__info {
+            max-width: 253px;
+        }
+
+        &__product-name {
+            font-size: 18px;
+            line-height: 22px;
+            padding-bottom: 8px;
+        }
+
+        &__text {
+            font-size: 12px;
+            line-height: 15px;
+            padding-bottom: 15px;
+        }
+
+        &__price {
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        &__content-btn-box {
+            gap: 14px;
+        }
+
+        &__content-btn {
+            width: 166px;
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        &__device-btn {
+            width: 163px;
+        }
+
+        &__form {
+            padding-bottom: 148px;
+        }
+
+        &__data-box {
+            margin-right: 28px;
+        }
+
+        &__data-input {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__total-summ {
+            margin-top: 28px;
+        }
+    }
+
+    .content {
+
+        &__box {
+            gap: 4px;
+        }
+    }
+
+    .content-device {
+        padding-top: 48px;
+    }
+
+    .content__box-basket {
+        gap: 38px;
+    }
+
+    .catalog__box {
+        row-gap: 39px;
+    }
+
+}        

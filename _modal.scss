@@ -1,0 +1,152 @@
+.menu {
+
+    &__modal {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__modal-wrapper {
+        position: absolute;
+        top: calc(100% + 18px);
+        right: 0;
+        width: 100%;
+        padding: 40px 48px;
+        background-color: $color-text;
+        z-index: 1;
+        min-width: 573px;
+        max-height: 480px;
+        display: none;
+        transition: all 1s;
+    }
+
+    &__link:hover + &__modal-wrapper {
+        display: block;
+    }
+    
+    &__modal-item {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__modal-itemfirst {
+        border-bottom: 0.5px solid rgb(202, 205, 216);
+        padding-top: 0;
+    }
+
+    &__modal-card {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__modal-img {
+        width: 144px;
+        height: 144px;
+    }
+
+    &__modal-name {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        text-align: left;
+        padding-bottom: 12px;
+    }
+
+    &__modal-price {
+        color: rgb(5, 5, 5);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+        padding-bottom: 54px;
+    }
+
+    &__modal-linkbox {
+        display: flex;  
+        gap: 24px;
+    }
+
+    &__modal-link {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 210%;
+        letter-spacing: 0px;
+        text-align: center;
+        text-decoration-line: underline;
+    }
+
+    &__modal-link:hover {
+        text-decoration: none;
+        color: #888888;
+    }
+
+    &__modal-input {
+        width: 71px;
+        height: 51px;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        background: rgb(247, 246, 246);
+        box-sizing: border-box;
+        color: rgb(0, 0, 0);
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 29.4px;
+        text-align: center;
+    }
+
+    &__modal-total {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__modal-totalsumm {
+        display: flex;
+        gap: 5px;
+    }
+
+    &__modal-tot {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+    }
+
+    &__modal-sum {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        text-align: center; 
+    }
+
+    &__modal-btn {
+        width: 207px;
+        height: 40px;
+        box-sizing: border-box;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 20px;
+        background: transparent;
+        color: rgb(0, 0, 0);
+        font: inherit;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center; 
+        transition: all 0.5s;
+    }
+
+    &__modal-btn:hover {
+        background: $bgc-btn;
+        color: $color-text;
+        font-family: inherit;
+    }
+
+}
